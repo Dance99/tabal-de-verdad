@@ -1,33 +1,41 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(blue, purple, rgb(213, 0, 164));
 }
 
 .title {
     margin-top: 20px;
-    color: #333;
+    color: #000000;
 }
 
 .container {
+    /* background-color establece el color de fondo de un elemento */
     background-color: #fff;
     margin: 20px auto;
     padding: 15px;
-    border: 2px solid #ddd;
+    /* border establece el borde de un elemento. */
+    border: 2px solid #060472;
     width: 300px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-
+/* <output> es un elemento contenedor en el que un sitio o una aplicación puede insertar los resultados de un cálculo o el resultado de una acción del usuario. */
 .inputs, .output {
     margin: 10px 0;
 }
-
+/* font sirve para los diferente tipos de texto */
 .text {
-    font-weight: bold;
-    color: #333;
+    font-weight: italic small-caps bold 16px/2 cursive;
+    color: #000000;
 }
-
+/* text-aling sirve para alienar el texto, centro, izq o der */
+.container {
+    text-align: center;
+}
+/* <input> se utiliza para crear controles interactivos para formularios */
 .input, .result {
     display: inline-block;
     margin: 0 10px;
@@ -37,6 +45,6 @@ body {
 }
 
 .result {
-    background-color: #00d1b2; /* Verde si es 1 */
-    color: white;
+    background-color: #80BFFF; /* azul si es 1 */
+    color: rgb(255, 255, 255);
 }
